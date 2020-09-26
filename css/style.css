@@ -68,7 +68,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Hind Siliguri", "Trebuchet MS", "Verdana", "Helvetica", "Arial";
+  font-family: "Playfair Display", "Trebuchet MS", "Verdana", "Helvetica", "Arial";
+  background: rgba(255, 241, 227, 0.5);
 }
 
 .phone {
@@ -77,22 +78,31 @@ body {
   border: 5px solid black;
   border-radius: 10px;
   position: relative;
+  background-image: url("../assets/home.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 main {
-  padding: 3rem;
+  padding: 2rem;
+  margin: 1rem;
   text-align: justify;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  height: 100%;
+  background: rgba(255, 241, 227, 0.85);
 }
 
-.text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+button {
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  background: none;
+}
+button:focus {
+  outline: none;
 }
 
 h1 {
@@ -105,24 +115,66 @@ p {
   margin-bottom: 1rem;
 }
 
+.nav-item a {
+  color: black;
+}
+.nav-item:hover a {
+  color: rgba(85, 50, 29, 0.65);
+}
+.nav-item i {
+  position: relative;
+  left: 0.25rem;
+  margin-right: 0.75rem;
+  font-size: 1.125rem;
+  color: rgba(85, 50, 29, 0.65);
+}
+
+.nav-button {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.nav-button:hover {
+  color: rgba(85, 50, 29, 0.65);
+}
+
 .nav-button {
   position: absolute;
+}
+.nav-button--open {
   top: 1rem;
   left: 1rem;
+  border-radius: 1.5px;
+  background: rgba(255, 241, 227, 0.85);
+}
+.nav-button--close {
+  top: 0.5rem;
+  right: 0.5rem;
 }
 
 nav {
+  display: flex;
+  flex-direction: column;
   position: absolute;
+  padding: 1rem 0;
   top: 0;
   left: 0;
   height: 100%;
   width: 75%;
-  background: white;
-  border: 1px solid red;
+  background: #fcf4ec;
+  z-index: 1;
+  border: 1px solid #000;
 }
 
 .nav-item {
-  padding: 1rem 1.5rem;
+  padding: 0.6rem 1rem;
+}
+.nav-brand {
+  align-self: center;
+  margin-bottom: 0.75rem;
+}
+.nav-category {
+  border-bottom: 1px solid rgba(85, 50, 29, 0.25);
+  padding: 1rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -7,3 +7,31 @@ p {
   text-indent: 1rem;
   margin-bottom: 1rem;
 }
+
+.nav-item {
+  a {
+    color: black;
+  }
+
+  &:hover a {
+    color: rgba($color-accent, .65);
+  }
+
+  i {
+    position: relative;
+    left: .25rem;
+    margin-right: .75rem;
+    font-size: 1.125rem;
+    color: rgba($color-accent, .65);
+  }
+}
+
+.nav-button {
+  font-size: 1.25rem;
+  cursor: pointer;
+
+  &:hover {
+    color: rgba($color-accent, .65);
+  }
+
+}
