@@ -8,10 +8,11 @@ p {
   margin-bottom: 1rem;
 }
 
+a {
+  color: black;
+}
+
 .nav-item {
-  a {
-    color: black;
-  }
 
   &:hover a {
     color: rgba($color-accent, .65);

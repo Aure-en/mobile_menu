@@ -27,6 +27,8 @@ nav {
   background: $color-nav;
   z-index: 1;
   border: 1px solid #000;
+  transform: translateX(-100%);
+  transition: 0.5s ease;
 }
 
 .nav {
@@ -37,7 +39,6 @@ nav {
 
   &-brand {
     align-self: center;
-    margin-bottom: .75rem;
   }
 
   &-category {

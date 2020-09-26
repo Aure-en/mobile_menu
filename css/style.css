@@ -83,6 +83,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 main {
@@ -115,9 +116,10 @@ p {
   margin-bottom: 1rem;
 }
 
-.nav-item a {
+a {
   color: black;
 }
+
 .nav-item:hover a {
   color: rgba(85, 50, 29, 0.65);
 }
@@ -163,6 +165,8 @@ nav {
   background: #fcf4ec;
   z-index: 1;
   border: 1px solid #000;
+  transform: translateX(-100%);
+  transition: 0.5s ease;
 }
 
 .nav-item {
@@ -170,7 +174,6 @@ nav {
 }
 .nav-brand {
   align-self: center;
-  margin-bottom: 0.75rem;
 }
 .nav-category {
   border-bottom: 1px solid rgba(85, 50, 29, 0.25);
