@@ -1,0 +1,20 @@
+{
+  "name": "mobile_menu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aure-en/mobile_menu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aure-en/mobile_menu/issues"
+  },
+  "homepage": "https://github.com/Aure-en/mobile_menu#readme"
+}
